@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Creative Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            animation: fadeIn 2s ease-in;
+            position: relative; /* Allows positioning of child elements */
+        }
+
+        .github-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        .github-link:hover {
+            color: #00ffcc;
+        }
+
+        .github-logo {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #00ffcc;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+            object-fit: cover;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #00ffcc;
+            text-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
+        }
+
+        .projects {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #00ffcc;
+            font-size: 2em;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+        }
+
+        .project-logo {
+            max-width: 120px;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            background: #fff;
+            padding: 5px;
+            object-fit: contain;
+        }
+
+        .project-card h3 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+
+        .project-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #00ffcc;
+            color: #1a1a1a;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+
+        .project-link:hover {
+            background: #fff;
+            transform: scale(1.05);
+        }
+
+        .contact {
+            padding: 40px 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-info {
+            margin: 20px 0;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header {
+                padding: 40px 10px;
+            }
+            
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .project-logo {
+                max-width: 100px;
+            }
+            
+            .github-link {
+                top: 10px;
+                left: 10px;
+            }
+            
+            .github-logo {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="https://github.com/i24hour?tab=repositories" target="_blank" class="github-link">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" class="github-logo">
+            GitHub
+        </a>
+        <img src="https://firebasestorage.googleapis.com/v0/b/mentorsmantratestportal1.appspot.com/o/PRIYANSHU%2FIMG_20230817_015022.jpg?alt=media&token=d810439f-7daf-450f-95b6-750544c64e38" alt="Your Profile" class="profile-img">
+        <h1>Priyanshu</h1>
+        <p>Creative Developer & Innovator</p>
+    </div>
+
+    <section class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="https://firebasestorage.googleapis.com/v0/b/mentorsmantratestportal1.appspot.com/o/mentors%20mantra%2Fpic-1%20copy.jpg?alt=media&token=e213e162-17cf-4f7d-9ca4-2e6264417b09" alt="Test Portal Logo" class="project-logo">
+                <h3>Test Portal</h3>
+                <p>id & password -: jee01.</p>
+                <a href="https://test-portal-lq1a.onrender.com " target="_blank" class="project-link">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="https://firebasestorage.googleapis.com/v0/b/mentorsmantratestportal1.appspot.com/o/mentors%20mantra%2Fpic-1%20copy.jpg?alt=media&token=e213e162-17cf-4f7d-9ca4-2e6264417b09" alt="Mentors Mantra Site Logo" class="project-logo">
+                <h3>Mentors Mantra Site</h3>
+                <p>This site provide best mentorship plans for upcoming jee aspirants.</p>
+                <a href="https://mentors-mantra-apgl.onrender.com" target="_blank" class="project-link">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="https://firebasestorage.googleapis.com/v0/b/mentorsmantratestportal1.appspot.com/o/PRIYANSHU%2F%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%A8%E0%A4%B6%E0%A5%89%E0%A4%9F%202025-04-06%2C%20%E0%A4%AA%E0%A5%82%202.58.17%20%E0%A4%AA%E0%A4%B0.png?alt=media&token=ba38e7d4-c8cb-41cc-a0d2-340c6a551185" alt="iTHiNK Logo" class="project-logo">
+                <h3>iTHiNK</h3>
+                <p>I bet when this project complete no one need resume.</p>
+                <a href="ithink-hvlw.onrender.com" target="_blank" class="project-link">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p>Email: priyanshu@me.iitr.ac.in</p>
+            <p>Phone: +91 9821040290</p>
+        </div>
+    </section>
+</body>
+</html>
